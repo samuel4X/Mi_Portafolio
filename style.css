@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  @media (max-width: 75em) {
+    html {
+      font-size: 60%;
+    }
+  }
+  
+  
+  /* 460px / 16px = 28.75em */
+  @media (max-width: 28.75em) {
+    html {
+      font-size: 55%;
+    }
+  }
+  
+  body{
+    color:#f0f0f0;
+    font-size: 1.8rem;
+    max-width: 100%;
+  }
+  html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  section{
+    width: 100%;
+    height: 100%;
+    max-width:initial;
+  }
+  
+  h1, h2{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-align: center;
+  }
+  h1{
+    font-size: 6rem;
+  }
+  
+  h2{
+   font-size: 4.2rem;
+  }
+  ul{
+    list-style: none;
+  }
+  a{
+    text-decoration: none;
+    color: #f0f0f0;
+  }
+  /*Barra de navegación*/
+  .navbar{
+    display: flex; 
+    justify-content:end;
+    /* flex-wrap: wrap; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #be3144;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+  }
+  
+  .nav-list{
+    display: flex;
+    margin-right: 2rem;
+  }
+  .nav-list a{
+    display: block;
+    font-size: 30px; 
+    padding: 2rem;
+  }
+  .nav-list a:hover {
+    background:#45567d;
+  }
+  @media (max-width: 28.75em) {
+    .nav {
+      justify-content: center;
+    }
+  
+    .nav-list {
+      margin: 0 1rem;
+    }
+  }
+  
+  /*Welcome Section*/
+  .Welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    margin: 0rem 0rem;
+    background-color: #000;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 );
+  
+  }
+  .Welcome-section >
+  p{
+    font-size: 3rem;
+    font-weight: 200;
+    font-style: italic;
+    color: #be3144;
+  }
+  
+  
+  /*Projects Section*/
+
+  .project-section{
+    background-color: #45567d; 
+    padding: 10rem 2rem;
+    text-align: center;
+    height: 100vh;
+  }
+  .title-proyect-section{
+    max-width: 640px;
+    margin: 0 auto 0rem auto; 
+    border-bottom: 2px solid #f0f0f0;
+  }
+  
+  
+  
+  
+  /*Contact Section */
+  
+  .contact-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    padding: 2rem 2rem;
+    background-color: #303841;
+  }
+  .contact-title{
+    margin-bottom: 5rem;
+  }
+  .contact-links{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .btn{
+    margin: 3rem;
+    font-size: 4rem;
+  }
